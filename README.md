@@ -50,27 +50,3 @@ Frontend:
 A new email must first be registered through **Create account**. The system does not pretend that an unregistered email is an existing user. This keeps the assignment's real-account requirement intact.
 
 If an email already exists, Create account shows a clear message. If login credentials are wrong, Login shows a clear message instead of leaving the page blank.
-
-## Assignment demo
-
-1. Create a new account with any email you choose.
-2. You are taken to the protected dashboard.
-3. Refresh the dashboard.
-4. Log out.
-5. Try opening `/dashboard` directly — you are redirected to Login.
-6. Sign in again with the account you created.
-
-## Final requirement checklist
-- Signup + client-side validation
-- Login + client-side validation
-- Password rules
-- bcrypt password hashing
-- JWT issuance
-- sessionStorage token
-- Bearer token on authenticated requests
-- Protected Dashboard/Profile/Security routes
-- Redirect unauthenticated users to Login
-- Logout clears token
-- Real SQLite accounts
-- Clear duplicate-account and wrong-password errors
-- Account backup export excluding passwords and tokens
